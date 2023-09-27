@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="518.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.uiContollers.AccountPageAdminController">
+   <children>
+      <BorderPane layoutX="175.0" layoutY="112.0" prefHeight="755.2" prefWidth="928.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Username" />
+                  <TextField fx:id="usernameText" />
+                  <Label fx:id="usernameErrorLabel" />
+                  <Label text="Email" />
+                  <TextField fx:id="emailText" editable="false" />
+                  <Label />
+                  <Label text="Password" />
+                  <PasswordField fx:id="passwordText" />
+                  <Label fx:id="passwordErrorLabel" />
+                  <Label text="Confirm Password" />
+                  <PasswordField fx:id="confirmPasswordText" />
+                  <Label fx:id="confirmPasswordErrorLabel" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="deleteAccountButton" mnemonicParsing="false" onAction="#deleteAccount" text="Delete Account" />
+                        <Pane>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="305.0" />
+                           </padding>
+                        </Pane>
+                        <Button fx:id="saveChangesButton" mnemonicParsing="false" onAction="#saveChanges" text="Save Changes" />
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

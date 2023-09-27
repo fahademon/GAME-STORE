@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.uiContollers.SignInPageAdminController">
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="idText" promptText="Username or email">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Pane prefHeight="38.0" prefWidth="200.0" />
+            <PasswordField fx:id="passwordText" promptText="Password">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </PasswordField>
+            <Label fx:id="signInErrorLabel" textFill="#ed2121" />
+            <HBox>
+               <children>
+                  <Pane />
+                  <Pane>
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                  </Pane>
+                  <Button fx:id="signInButton" mnemonicParsing="false" onAction="#validateCredentials" text="Sign In" />
+               </children>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="100.0" top="50.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="200.0" right="200.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <top>
+      <Label alignment="CENTER" prefHeight="54.0" prefWidth="294.0" text="Sign In - Admin" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <padding>
+            <Insets top="72.0" />
+         </padding>
+      </Label>
+   </top>
+</BorderPane>

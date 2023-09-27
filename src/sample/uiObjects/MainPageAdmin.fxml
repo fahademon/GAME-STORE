@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPageBorderPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.uiContollers.MainPageAdminController">
+   <left>
+      <VBox alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#changeTabToHome" text="Home" />
+            <Button mnemonicParsing="false" onAction="#changeTabToAdmins" text="Admins" />
+            <Button mnemonicParsing="false" onAction="#changeTabToCustomers" text="Customers" />
+            <Button mnemonicParsing="false" onAction="#changeTabToTitles" text="Titles" />
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="signOutButton" mnemonicParsing="false" onAction="#changeSceneToSignIn" text="Sign Out" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1000.0" BorderPane.alignment="CENTER_LEFT">
+         <padding>
+            <Insets bottom="13.0" left="13.0" top="10.0" />
+         </padding>
+         <children>
+            <Label fx:id="pageLabel" alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

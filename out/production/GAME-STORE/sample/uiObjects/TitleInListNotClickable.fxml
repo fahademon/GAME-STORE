@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.uiContollers.TitleInListController">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <ImageView fx:id="titleImageView" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox alignment="CENTER" prefHeight="50.0">
+               <children>
+                  <Label fx:id="nameLabel">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="platformLabel">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Pane>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </Pane>
+            <Label fx:id="priceLabel" text="Rs. " />
+         </children>
+      </HBox>
+      <ChoiceBox fx:id="keysContainer" minWidth="-Infinity" prefWidth="400.0" />
+   </children>
+</VBox>
